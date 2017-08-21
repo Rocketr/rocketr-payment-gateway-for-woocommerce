@@ -56,7 +56,7 @@ function init_rocketr_gatway() {
 
     		$this->id = 'rocketr';
     		$this->has_fieds = false;
-    		$this->icon =  WP_PLUGIN_URL . '/rocketr-payment-gateway-for-woocommerce/assets/images/icon.png';
+    		$this->icon =  plugins_url( 'assets/images/icon.png', __FILE__ );
     		$this->method_title = __('Rocketr.net', 'woocommerce-gateway-rocketr');
     		$this->method_description = __('<a href="https://rocketr.net">Rocketr</a> allows you to easily process Paypal, Stripe (credit cards), Bitcoin, Bitcoin Cash, Ethereum, Perfect Money, and more.', 'woocommerce-gateway-rocketr');
 			
