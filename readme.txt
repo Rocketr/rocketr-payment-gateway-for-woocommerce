@@ -30,3 +30,5 @@ Installing the plugin is very simple. Just follow these steps:
 * Initial release
 = 2.0.0 =
 * Upgrade to new Rocketr Payments Platform
+= 2.0.1 =
+* Fix bug for buyer email

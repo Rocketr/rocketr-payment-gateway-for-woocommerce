@@ -4,14 +4,14 @@
  * Description: This gateway allows you to easily accept a multitude of payment methods such as Bitcoin, Ethereum, Bitcoin Cash, PayPal, Litecoin, and more.
  * Author: Rocketr
  * Author URI: https://rocketr.net
- * Version: 2.0.0
+ * Version: 2.0.1
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
 //FROM Stripe's plugin
-define( 'WC_ROCKETR_VERSION', '2.0' );
+define( 'WC_ROCKETR_VERSION', '2.0.1' );
 define( 'WC_ROCKETR_MIN_PHP_VER', '5.6.0' );
 define( 'WC_ROCKETR_MIN_WC_VER', '2.6.0' );
 define( 'WC_ROCKETR_MAIN_FILE', __FILE__ );

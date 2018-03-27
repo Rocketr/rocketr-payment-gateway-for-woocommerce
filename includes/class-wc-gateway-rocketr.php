@@ -340,7 +340,9 @@ class WC_Gateway_Rocketr extends WC_Payment_Gateway {
 			
 			$o->setPaymentMethod(WC_Rocketr_Payment_Methods::getConstFromName($payment_method));
 			$o->setAmount($orderObject->get_total());
-			$o->setBuyerEmail('saad@rocketr.net');
+			$billing_email = (version_compare( WC_VERSION, '2.7', '<' )) ? $orderObject->billing_email : $orderObject->get_billing_email(); 
+
+			$o->setBuyerEmail($billing_email);
 			$o->addCustomField('wc_order_id', $orderObject->get_order_number());
 			$o->addCustomField('wc_blog_url', get_site_url());
 			$o->addCustomField('wc_blog_name', get_bloginfo('name'));
