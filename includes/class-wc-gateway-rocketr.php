@@ -166,7 +166,7 @@ class WC_Gateway_Rocketr extends WC_Payment_Gateway {
 		$icon_string = '';
 		$c = 0;
 		foreach($this->rocketr_payment_methods as $method) {
-			$icon_string .= '<img src="' . plugins_url( 'assets/images/' . esc_attr($method) . '.png', WC_ROCKETR_MAIN_FILE ) . '" alt="' . esc_attr($method) . '"  />';
+			$icon_string .= '<img src="' . plugins_url( 'assets/images/' . esc_attr($method) . '.png', WC_ROCKETR_MAIN_FILE ) . '" alt="' . esc_attr($method) . '" style="max-width: 100%; max-height: 52px;" />';
 			if($c == 3)
 				$icon_string .= '<br>';
 			$c++;
